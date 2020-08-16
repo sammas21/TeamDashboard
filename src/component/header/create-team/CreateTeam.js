@@ -1,5 +1,4 @@
 import React from 'react'
-import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 
 import * as actionTypes from '../../../store/actions';
@@ -21,12 +20,12 @@ function CreateTeam() {
                 <div className="col-4">
                     <label htmlFor="inlineFormInputName2">Select Type</label>
                     <select className="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe" required>
-                        <option value="" disabled hidden selected>Choose Any...</option>
+                        <option value="" disabled hidden>Choose Any...</option>
                         <option value="Team">Team</option>
                     </select>
                 </div>
                 <div className="col-4">
-                    <label for="inlineFormInputGroupUsername2">Team Name</label>
+                    <label htmlFor="inlineFormInputGroupUsername2">Team Name</label>
                     <input type="text" className="form-control" id="inlineFormInputGroupUsername2" name="optName" placeholder="Team Name" required/>
                 </div>
                 <div className="col-3">

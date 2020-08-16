@@ -3,7 +3,7 @@ import CreateTeam from './create-team/CreateTeam';
 
 function Header() {
     return (
-        <div class="header fl-container">
+        <div className="header fl-container">
             <CreateTeam />
         </div>
     )

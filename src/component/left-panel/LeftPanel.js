@@ -3,7 +3,7 @@ import TeamList from '../teams/TeamList'
 
 function LeftPanel() {
     return (
-        <div class="panel panel-left">
+        <div className="panel panel-left">
                 
             <h5>Teams</h5>    
              

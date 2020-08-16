@@ -1,12 +1,18 @@
-import React from 'react'
+import React from 'react';
+import { useDispatch } from "react-redux";
+
+import * as actionTypes from '../../../store/actions';  
 
 function Team(props) {
+
+    const dispatch = useDispatch();
+
     return (
-        <div class="info-strip">
-            <div class="info-strip-body">
-                {props.teamname}
+        <div className="info-strip">
+            <div className="info-strip-body" onClick={()=>{dispatch({type:actionTypes.SELECTTEAM, val:props.team})}}>
+                {props.team}
             </div>
-            <div class="info-strip-end"></div>
+            <div className="info-strip-end"></div>
         </div>
     )
 }

@@ -1,7 +1,8 @@
 import * as actionTypes from '../actions';
 
 const initialState = {
-    results: []
+    currentTeam:{}
+    
 };
 
 const reducer = ( state = initialState, action ) => {

@@ -2,17 +2,18 @@ import React from 'react'
 import { connect } from 'react-redux';
 import Header from '../../component/header/Header'
 import LeftPanel from '../../component/left-panel/LeftPanel'
-import DisplayPanel from '../../component/display-panel/DisplayPanel'
+
 import * as actionTypes from '../../store/actions';
+import TeamDetail from '../../component/team-users/TeamDetail';
 
 
 function Dashboard() {
     return (
-        <div class="container-fluid">        
+        <div className="container-fluid">        
             <Header/>
-            <div class="main-block fl-container">
+            <div className="main-block fl-container">
                 <LeftPanel/>
-                <DisplayPanel/>   
+                <TeamDetail/>   
             </div>
         </div>
     )

@@ -9,7 +9,7 @@ function TeamList() {
     return ( 
         teams.length>0?
         teams.map((elem)=>(
-            <Team teamname={elem}/>
+            <Team key={elem.teamName} team={elem.teamName}/>
         )):<h6>Please Add Teams</h6>
         
     )
